@@ -1,10 +1,12 @@
 # MNIST-Classification
 MNIST Classification using Custom Dataset
 
+# Assignment submitted by Min-Seok Yoon
 ### [ddua.seoultech.ac.kr] (https://ddua.seoultech.ac.kr/index.do)
 
 
 
+# Reports
 ## Model Architecture Overview
 
 ### LeNet-5 Model
