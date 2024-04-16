@@ -15,7 +15,7 @@ LeNet-5 is a convolutional network that includes three convolutional layers and 
   - Fully Connected Layer 6: (120×84+84) = 10,164 parameters
   - Output Layer: (84×10+10) = 850 parameters
 - **Total Parameters**: 61,706
-- 
+
 ### Custom MLP Model
 Our custom MLP model is designed to match the parameter count of LeNet-5 closely, making it suitable for similar tasks with a fully connected architecture.
 
