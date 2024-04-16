@@ -1,5 +1,4 @@
 # import some packages you need here
-import os
 import torch
 from torchvision import transforms
 import pandas as pd
@@ -59,10 +58,10 @@ def get_loader(train_df, test_df, batch_size, test_batch_size):
             transforms.ToTensor(), # Convert the values of all values to a range between 0 and 1
             transforms.Normalize((0.1307,), (0.3081,)) # Normalize with mean and std
         ])
-        def get_transforms():
+        def get_aug_transforms():
             train_transform = transforms.Compose([
-                transforms.RandomRotation(10),             # Rotate images by up to 10 degrees
-                transforms.RandomHorizontalFlip(),         # Apply horizontal flipping
+                transforms.RandomRotation(10),             # Rotate images by up to 18 degrees
+                transforms.RandomAffine(degrees=0, translate=(0.05, 0.05)), # Moving the images from left to right
                 transforms.ToTensor(),                     # Convert the values of all values to a range between 0 and 1
                 transforms.Normalize((0.1307,), (0.3081,)) # Normalize with mean and std
             ])
@@ -72,14 +71,14 @@ def get_loader(train_df, test_df, batch_size, test_batch_size):
             ])
             return train_transform, test_transform
         
-        # # normal
-        # train_dataset = MNIST(data_path=train_df, image_transform=image_transform)
-        # test_dataset = MNIST(data_path=test_df, image_transform=image_transform)
+        # normal dataset
+        train_dataset = MNIST(data_path=train_df, image_transform=image_transform)
+        test_dataset = MNIST(data_path=test_df, image_transform=image_transform)
         
-        # augmentation aplied
-        train_transform, test_transform = get_transforms()
-        train_dataset = MNIST(data_path=train_df, image_transform=train_transform)
-        test_dataset = MNIST(data_path=test_df, image_transform=test_transform)
+        # # augmentation aplied dataset
+        # train_transform, test_transform = get_aug_transforms()
+        # train_dataset = MNIST(data_path=train_df, image_transform=train_transform)
+        # test_dataset = MNIST(data_path=test_df, image_transform=test_transform)
 
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=8, pin_memory=True, generator=torch.Generator().manual_seed(725))
         test_loader = DataLoader(test_dataset, batch_size=test_batch_size, shuffle=False, num_workers=8, pin_memory=True)
@@ -93,7 +92,7 @@ if __name__ == '__main__':
     # 1) Each image should be preprocessed as follows:
     #     - First, all values should be in a range of [0,1]
     #     - Substract mean of 0.1307, and divide by std 0.3081
-    train, test = get_loader('train_df.csv', 'test_df.csv', 1, 1)  
+    train, test = get_loader('train_df.csv', 'test_df.csv', 1, 1)
     
 
     # # test dataloader
