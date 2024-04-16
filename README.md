@@ -35,11 +35,11 @@ For detailed implementation, please refer to `model.py` in this repository.
 
 ## Neural Network Training Report
 
-This report summarizes the training process of two neural network models: a custom Multi-Layer Perceptron (MLP) and the LeNet-5 model. We present the loss and accuracy metrics, both for training and testing datasets, across various epochs.
+This report summarizes the training process of two neural network models: the LeNet-5 model. and a custom Multi-Layer Perceptron (MLP). We present the loss and accuracy metrics, both for training and testing datasets, across various epochs.
+
+Below are the accuracy and loss plots derived from its training and testing processes.
 
 ### LeNet-5 Model
-
-LeNet-5 is a convolutional neural network model well-suited for image recognition tasks. Below are the accuracy and loss plots derived from its training and testing processes.
 
 #### Training Accuracy and Loss
 ![LeNet5 Training Accuracy](LeNet5_train_accuracy.png)
@@ -56,8 +56,6 @@ LeNet-5 is a convolutional neural network model well-suited for image recognitio
 - **Testing Loss**: Depicts the test error for the model. Like the training loss, a downward trend would indicate improved performance, whereas fluctuations may point to overfitting or instability during training.
 
 ### Custom MLP Model
-
-The Custom MLP model is structured to have a parameter count close to that of the LeNet-5 model. It is trained and tested on the MNIST dataset to recognize handwritten digits.
 
 #### Training Accuracy and Loss
 ![Custom MLP Training Accuracy](CustomMLP_train_accuracy.png)
