@@ -39,6 +39,18 @@ The custom MLP model has a parameter count similar to LeNet-5, with a slightly h
 
 For detailed implementation, please refer to `model.py` in this repository.
 
+## Hyperparameter
+- Batch size : 64
+- Optimizer : SGD
+- Learning rate : 0.01
+- momentum = 0.9
+- Epochs = 15
+- Criterion = Cross Entropy Loss
+  ### in Normalization
+  - weight_decay = 0.001
+  - RandomRotation = 10
+  - RandomAffine = 0.05, 0.05
+  - Dropout = 0.25
 
 ## Performance Analysis Report
 
