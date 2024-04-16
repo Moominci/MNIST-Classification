@@ -76,7 +76,7 @@ The Custom MLP model is designed with a similar number of parameters as the LeNe
 This section presents a comparison between the predictive performances of the LeNet-5 and the custom MLP models trained on the same dataset.
 
 ### Performance Metrics
-We evaluate the models based on two primary metrics:
+evaluate the models based on two primary metrics:
 1. **Accuracy**: The proportion of true results (both true positives and true negatives) among the total number of cases examined.
 2. **Loss**: A numerical representation of how far the model's predictions are from the actual labels.
 
@@ -99,4 +99,9 @@ The observed accuracies for both models are similar to known benchmarks, indicat
 In conclusion, both the LeNet-5 and custom MLP models demonstrate strong capabilities in recognizing handwritten digits with LeNet-5 showing a slight advantage in overall accuracy.
 
 
+## Employ regularization techniques 
 
+used three regularization techniques
+- augmentation : RandomRotation, RandomAffine (Rotate images, Moving the images from left to right)
+- dropout : Dropout(0.25)
+- L2 normalization : optim.weight_decay
