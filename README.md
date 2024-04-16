@@ -107,3 +107,16 @@ used three regularization techniques and Through various attempts, I found the f
 - L2 normalization : optim.weight_decay(0.001)
 
 Here are the four plots of the LeneT-5 model with the normalization technique.
+
+#### Training Performance
+- Training Accuracy: Shows a similar trend to the Custom MLP, with a quick rise and high stabilization.
+- Training Loss: Decreases consistently, indicating a strong fit to the training data.
+
+#### Testing Performance
+- Testing Accuracy: Remains consistently high, with a peak testing accuracy of approximately 99%, which is characteristic of LeNet-5's performance.
+- Testing Loss: Shows a downward trend with some fluctuation, typical in the testing phase due to the varied nature of the test samples.
+
+<img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_train_accuracy.png" width="650" height="300" alt="LeNet-5 Training Accuracy">
+<img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_train_loss.png" width="650" height="300" alt="LeNet-5 Training Loss">
+<img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_test_accuracy.png" width="650" height="300" alt="LeNet-5 Testing Accuracy">
+<img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_test_loss.png" width="650" height="300" alt="LeNet-5 Testing Loss">
