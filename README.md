@@ -101,7 +101,9 @@ In conclusion, both the LeNet-5 and custom MLP models demonstrate strong capabil
 
 ## Employ regularization techniques 
 
-used three regularization techniques
-- augmentation : RandomRotation, RandomAffine (Rotate images, Moving the images from left to right)
-- dropout : Dropout(0.25)
-- L2 normalization : optim.weight_decay
+used three regularization techniques and Through various attempts, I found the following optimal hyperparameters.
+- augmentation : RandomRotation(10), RandomAffine(0.05, 0.05) (Rotate images, Moving the images from left to right)
+- dropout : Dropout(0.25) to feature layers
+- L2 normalization : optim.weight_decay(0.001)
+
+Here are the four plots of the LeneT-5 model with the normalization technique.
