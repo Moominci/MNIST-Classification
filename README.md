@@ -70,10 +70,10 @@ The Custom MLP model is designed with a similar number of parameters as the LeNe
 - Testing Accuracy: Accuracy on the testing set improves consistently, with slight fluctuations, peaking around 97.5%. This suggests good generalization.
 - Testing Loss: The testing loss decreases and then fluctuates, which is expected as the model encounters various complexities within the test data.
 
-<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_accuracy.png" width="650" height="400" alt="Custom MLP Training Accuracy">
-<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_loss.png" width="650" height="400" alt="Custom MLP Training Loss">
-<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_accuracy.png" width="650" height="400" alt="Custom MLP Testing Accuracy">
-<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_loss.png" width="650" height="400" alt="Custom MLP Testing Loss">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_accuracy.png" width="650" height="300" alt="Custom MLP Training Accuracy">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_loss.png" width="650" height="300" alt="Custom MLP Training Loss">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_accuracy.png" width="650" height="300" alt="Custom MLP Testing Accuracy">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_loss.png" width="650" height="300" alt="Custom MLP Testing Loss">
 
 ### Comparative Analysis
 
