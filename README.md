@@ -3,9 +3,9 @@ MNIST Classification using Custom Dataset
 
 
 # Assignment submitted by MinSeok Yoon
-Department of Data Science
-Seoul National University of Science and Technology, Korea
-Data-Driven User Analysis Lab
+- Seoul National University of Science and Technology, Korea
+- Department of Data Science
+- Data-Driven User Analysis Lab
 #### [ddua.seoultech.ac.kr] (https://ddua.seoultech.ac.kr/index.do)
 
 
