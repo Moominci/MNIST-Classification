@@ -70,10 +70,10 @@ The Custom MLP model is designed with a similar number of parameters as the LeNe
 ![Custom MLP Testing Accuracy](./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_accuracy.png)
 ![Custom MLP Testing Loss](./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_loss.png)
 
-<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_accuracy.png" width="800" height="600" alt="Custom MLP Training Accuracy">
-<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_loss.png" width="800" height="600" alt="Custom MLP Training Loss">
-<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_accuracy.png" width="800" height="600" alt="Custom MLP Testing Accuracy">
-<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_loss.png" width="800" height="600" alt="Custom MLP Testing Loss">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_accuracy.png" width="600" height="400" alt="Custom MLP Training Accuracy">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_loss.png" width="600" height="400" alt="Custom MLP Training Loss">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_accuracy.png" width="600" height="400" alt="Custom MLP Testing Accuracy">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_loss.png" width="600" height="400" alt="Custom MLP Testing Loss">
 
 ### Comparative Analysis
 
