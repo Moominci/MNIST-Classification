@@ -106,12 +106,6 @@ Overall, both models perform competitively, with LeNet-5 having a slight edge in
 
 The observed accuracies for both models are similar to known benchmarks, indicating that the training processes were successful and the models are well-tuned for the task.
 
-### Further Steps
-To further improve model performance, consider the following:
-- **Data Augmentation**: Enhance the dataset with transformed versions of the original images to improve generalization.
-- **Hyperparameter Tuning**: Optimize learning rate, batch size, and other model parameters through systematic experimentation.
-- **Regularization Techniques**: Implement dropout, weight decay, or batch normalization to combat overfitting.
-
 In conclusion, both the LeNet-5 and custom MLP models demonstrate strong capabilities in recognizing handwritten digits with LeNet-5 showing a slight advantage in overall accuracy.
 
 
