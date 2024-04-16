@@ -47,11 +47,6 @@ This report analyzes the performance of two neural network models: the LeNet-5 a
 - Testing Accuracy: Remains consistently high, with a peak testing accuracy of approximately 99%, which is characteristic of LeNet-5's performance.
 - Testing Loss: Shows a downward trend with some fluctuation, typical in the testing phase due to the varied nature of the test samples.
 
-![LeNet-5 Training Accuracy](./plot_images/no_aug_normal_opt_epochs_15/LeNet5_train_accuracy.png)
-![LeNet-5 Training Loss](./plot_images/no_aug_normal_opt_epochs_15/LeNet5_train_loss.png)
-![LeNet-5 Testing Accuracy](./plot_images/no_aug_normal_opt_epochs_15/LeNet5_test_accuracy.png)
-![LeNet-5 Testing Loss](./plot_images/no_aug_normal_opt_epochs_15/LeNet5_test_loss.png)
-
 <img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_train_accuracy.png" width="650" height="300" alt="LeNet-5 Training Accuracy">
 <img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_train_loss.png" width="650" height="300" alt="LeNet-5 Training Loss">
 <img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_test_accuracy.png" width="650" height="300" alt="LeNet-5 Testing Accuracy">
