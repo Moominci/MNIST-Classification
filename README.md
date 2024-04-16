@@ -43,32 +43,36 @@ Below are the accuracy and loss plots derived from its training and testing proc
 
 #### Training Accuracy and Loss
 ![LeNet5 Training Accuracy](LeNet5_train_accuracy.png)
+![LeNet5 Training Loss](LeNet5_train_loss.png)
+
 - **Training Accuracy**: Depicts the proportion of correctly identified images by the model in the training set. An upward trend in accuracy is noted as training progresses.
 
-![LeNet5 Training Loss](LeNet5_train_loss.png)
 - **Training Loss**: Showcases the model's training error. The plot shows a steady decrease in loss, signifying consistent learning across epochs.
 
 #### Testing Accuracy and Loss
 ![LeNet5 Testing Accuracy](LeNet5_test_accuracy.png)
+![LeNet5 Testing Loss](LeNet5_test_loss.png)
+
 - **Testing Accuracy**: Reflects the model's accuracy on the test dataset. This measure helps in understanding how well the model can generalize.
 
-![LeNet5 Testing Loss](LeNet5_test_loss.png)
 - **Testing Loss**: Depicts the test error for the model. Like the training loss, a downward trend would indicate improved performance, whereas fluctuations may point to overfitting or instability during training.
 
 ### Custom MLP Model
 
 #### Training Accuracy and Loss
 ![Custom MLP Training Accuracy](CustomMLP_train_accuracy.png)
+![Custom MLP Training Loss](CustomMLP_train_loss.png)
+
 - **Training Accuracy**: Shows the percentage of correctly classified images in the training set across epochs. The model exhibits an increasing trend, indicating learning over time.
 
-![Custom MLP Training Loss](CustomMLP_train_loss.png)
 - **Training Loss**: Represents the model's error on the training set. A declining trend is observable, which is desirable as it indicates better model performance with each epoch.
 
 #### Testing Accuracy and Loss
 ![Custom MLP Testing Accuracy](CustomMLP_test_accuracy.png)
+![Custom MLP Testing Loss](CustomMLP_test_loss.png)
+
 - **Testing Accuracy**: Displays the model's performance on the test set. The plot demonstrates the model's generalization capabilities with new, unseen data.
 
-![Custom MLP Testing Loss](CustomMLP_test_loss.png)
 - **Testing Loss**: Illustrates the loss on the test set. Fluctuations suggest variations in model predictions against the actual labels in the test set.
 
 ### Conclusion
