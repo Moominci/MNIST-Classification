@@ -6,10 +6,10 @@ MNIST Classification using Custom Dataset
 - Seoul National University of Science and Technology, Korea
 - Department of Data Science
 - Data-Driven User Analysis Lab
-#### [ddua.seoultech.ac.kr] (https://ddua.seoultech.ac.kr/index.do)
+#### [Data-Driven User Analysis Lab] (https://ddua.seoultech.ac.kr/index.do)
 
 
-# Reports
+# Assignment Reports
 ## Model Architecture Overview
 
 ### LeNet-5 Model
