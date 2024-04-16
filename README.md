@@ -71,9 +71,43 @@ Below are the accuracy and loss plots derived from its training and testing proc
 ![Custom MLP Testing Loss](CustomMLP_test_loss.png)
 - **Testing Loss**: Illustrates the loss on the test set. Fluctuations suggest variations in model predictions against the actual labels in the test set.
 
-
-## Conclusion
+### Conclusion
 
 The plots above demonstrate the learning curve of both models through their respective training and testing phases. They serve as a visual tool to assess the model's performance, stability, and generalization capabilities over time.
+
+
+## Comparative Performance Analysis: LeNet-5 vs Custom MLP
+
+This section presents a comparison between the predictive performances of the LeNet-5 and the custom MLP models trained on the same dataset.
+
+### Performance Metrics
+We evaluate the models based on two primary metrics:
+1. **Accuracy**: The proportion of true results (both true positives and true negatives) among the total number of cases examined.
+2. **Loss**: A numerical representation of how far the model's predictions are from the actual labels.
+
+### LeNet-5 Model Performance
+The LeNet-5 model demonstrates excellent predictive performance with the testing accuracy peaking around 98.9%. This is in line with historical performance metrics known for LeNet-5 on similar datasets. The testing loss for LeNet-5 also shows fluctuations, which is common in testing scenarios due to the model encountering varied difficulty levels within the test data.
+
+### Custom MLP Model Performance
+The Custom MLP model shows a steady increase in testing accuracy, reaching approximately 97.5% by the final epoch. This demonstrates strong predictive performance. However, there is some fluctuation in testing loss, indicating variability in the model's predictions on different batches of the test set.
+
+
+### Comparison and Insights
+When comparing the two models:
+- **LeNet-5** tends to have a slightly higher **testing accuracy** than the custom MLP, which aligns with expectations given its convolutional structure that is specifically advantageous for image recognition tasks.
+- **Testing loss** for both models shows some volatility, which is typical in practice due to the variability inherent in test data.
+
+Overall, both models perform competitively, with LeNet-5 having a slight edge in accuracy. This might be attributed to LeNet-5's convolutional layers, which are adept at capturing spatial hierarchies in image data.
+
+The observed accuracies for both models are similar to known benchmarks, indicating that the training processes were successful and the models are well-tuned for the task.
+
+### Further Steps
+To further improve model performance, consider the following:
+- **Data Augmentation**: Enhance the dataset with transformed versions of the original images to improve generalization.
+- **Hyperparameter Tuning**: Optimize learning rate, batch size, and other model parameters through systematic experimentation.
+- **Regularization Techniques**: Implement dropout, weight decay, or batch normalization to combat overfitting.
+
+In conclusion, both the LeNet-5 and custom MLP models demonstrate strong capabilities in recognizing handwritten digits with LeNet-5 showing a slight advantage in overall accuracy.
+
 
 
