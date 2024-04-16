@@ -1,5 +1,7 @@
 # MNIST-Classification
-MNIST Classification using Custom Dataset, DataLoader
+MNIST Classification using Custom Dataset
+
+# [ddua.seoultech.ac.kr] (https://ddua.seoultech.ac.kr/index.do)
 
 
 
