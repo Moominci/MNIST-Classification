@@ -40,7 +40,7 @@ This report analyzes the performance of two neural network models: the LeNet-5 a
 ### LeNet-5 Model Performance
 
 #### Training Performance
-- Training Accuracy: Shows a similar trend to the Custom MLP, with a quick rise and high stabilization.
+- Training Accuracy: The model's accuracy on the training set shows a steep increase initially, stabilizing at high values, indicating effective learning.
 - Training Loss: Decreases consistently, indicating a strong fit to the training data.
 
 #### Testing Performance
@@ -52,13 +52,12 @@ This report analyzes the performance of two neural network models: the LeNet-5 a
 <img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_test_accuracy.png" width="650" height="300" alt="LeNet-5 Testing Accuracy">
 <img src="./plot_images/no_aug_normal_opt_epochs_15/LeNet5_test_loss.png" width="650" height="300" alt="LeNet-5 Testing Loss">
 
-
 ### Custom MLP Model Performance
 
 The Custom MLP model is designed with a similar number of parameters as the LeNet-5 model, and its performance is measured on the MNIST dataset.
 
 #### Training Performance
-- Training Accuracy: The model's accuracy on the training set shows a steep increase initially, stabilizing at high values, indicating effective learning.
+- Training Accuracy: Shows a similar trend to the LeNet-5, with a slow rise and stabilization.
 - Training Loss: The loss decreases rapidly, suggesting that the model is fitting well to the training data.
 
 #### Testing Performance
@@ -103,20 +102,15 @@ In conclusion, both the LeNet-5 and custom MLP models demonstrate strong capabil
 
 used three regularization techniques and Through various attempts, I found the following optimal hyperparameters.
 - augmentation : RandomRotation(10), RandomAffine(0.05, 0.05) (Rotate images, Moving the images from left to right)
-- dropout : Dropout(0.25) to feature layers
+- dropout : Dropout(0.25) to first, second convolution layer
 - L2 normalization : optim.weight_decay(0.001)
 
 Here are the four plots of the LeneT-5 model with the normalization technique.
-
-#### Training Performance
-- Training Accuracy: Shows a similar trend to the Custom MLP, with a quick rise and high stabilization.
-- Training Loss: Decreases consistently, indicating a strong fit to the training data.
-
-#### Testing Performance
-- Testing Accuracy: Remains consistently high, with a peak testing accuracy of approximately 99%, which is characteristic of LeNet-5's performance.
-- Testing Loss: Shows a downward trend with some fluctuation, typical in the testing phase due to the varied nature of the test samples.
 
 <img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_train_accuracy.png" width="650" height="300" alt="LeNet-5 Training Accuracy">
 <img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_train_loss.png" width="650" height="300" alt="LeNet-5 Training Loss">
 <img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_test_accuracy.png" width="650" height="300" alt="LeNet-5 Testing Accuracy">
 <img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_test_loss.png" width="650" height="300" alt="LeNet-5 Testing Loss">
+
+### Conclusion
+We can see a slight increase over the existing performance as the regularization technique is applied
