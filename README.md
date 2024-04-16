@@ -1,7 +1,7 @@
 # MNIST-Classification
 MNIST Classification using Custom Dataset
 
-# Assignment submitted by Min-Seok Yoon
+# Assignment submitted by MinSeok Yoon
 ### [ddua.seoultech.ac.kr] (https://ddua.seoultech.ac.kr/index.do)
 
 
