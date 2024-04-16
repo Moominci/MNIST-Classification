@@ -70,16 +70,6 @@ The Custom MLP model is designed with a similar number of parameters as the LeNe
 <img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_accuracy.png" width="650" height="300" alt="Custom MLP Testing Accuracy">
 <img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_loss.png" width="650" height="300" alt="Custom MLP Testing Loss">
 
-### Comparative Analysis
-
-- The LeNet-5 model slightly outperforms the Custom MLP in terms of testing accuracy. This could be due to the convolutional layers in LeNet-5, which are specifically advantageous for capturing spatial and hierarchical features in image data.
-- Both models show a good fit on the training data, as indicated by the high accuracy and low loss values.
-- The testing loss for both models exhibits some volatility, which is a normal occurrence and can be a focal point for further model improvement.
-
-## Conclusion
-
-The LeNet-5 and Custom MLP models have demonstrated impressive performance on the MNIST digit recognition task. While LeNet-5 has a marginal advantage in accuracy, the Custom MLP holds its ground, validating the effectiveness of a well-structured fully connected network for image classification tasks.
-
 
 ## Comparative Performance Analysis: LeNet-5 vs Custom MLP
 
