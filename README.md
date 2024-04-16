@@ -33,51 +33,51 @@ The custom MLP model has a parameter count similar to LeNet-5, with a slightly h
 For detailed implementation, please refer to `model.py` in this repository.
 
 
-## Neural Network Training Report
+## Performance Analysis Report
 
-This report summarizes the training process of two neural network models: the LeNet-5 model. and a custom Multi-Layer Perceptron (MLP). We present the loss and accuracy metrics, both for training and testing datasets, across various epochs.
+This report analyzes the performance of two neural network models: the LeNet-5 and a custom Multi-Layer Perceptron (MLP). The performance is measured in terms of accuracy and loss on both the training and testing (used as validation) datasets.
 
-Below are the accuracy and loss plots derived from its training and testing processes.
+### LeNet-5 Model Performance
 
-### LeNet-5 Model
+#### Training Performance
+- Training Accuracy: Shows a similar trend to the Custom MLP, with a quick rise and high stabilization.
+- Training Loss: Decreases consistently, indicating a strong fit to the training data.
 
-#### Training Accuracy and Loss
-![LeNet5 Training Accuracy](LeNet5_train_accuracy.png)
-![LeNet5 Training Loss](LeNet5_train_loss.png)
+#### Testing Performance
+- Testing Accuracy: Remains consistently high, with a peak testing accuracy of approximately 99%, which is characteristic of LeNet-5's performance.
+- Testing Loss: Shows a downward trend with some fluctuation, typical in the testing phase due to the varied nature of the test samples.
 
-- **Training Accuracy**: Depicts the proportion of correctly identified images by the model in the training set. An upward trend in accuracy is noted as training progresses.
+![LeNet-5 Training Accuracy](LeNet5_train_accuracy.png)
+![LeNet-5 Training Loss](LeNet5_train_loss.png)
+![LeNet-5 Testing Accuracy](LeNet5_test_accuracy.png)
+![LeNet-5 Testing Loss](LeNet5_test_loss.png)
 
-- **Training Loss**: Showcases the model's training error. The plot shows a steady decrease in loss, signifying consistent learning across epochs.
+### Custom MLP Model Performance
 
-#### Testing Accuracy and Loss
-![LeNet5 Testing Accuracy](LeNet5_test_accuracy.png)
-![LeNet5 Testing Loss](LeNet5_test_loss.png)
+The Custom MLP model is designed with a similar number of parameters as the LeNet-5 model, and its performance is measured on the MNIST dataset.
 
-- **Testing Accuracy**: Reflects the model's accuracy on the test dataset. This measure helps in understanding how well the model can generalize.
+#### Training Performance
+- Training Accuracy: The model's accuracy on the training set shows a steep increase initially, stabilizing at high values, indicating effective learning.
+- Training Loss: The loss decreases rapidly, suggesting that the model is fitting well to the training data.
 
-- **Testing Loss**: Depicts the test error for the model. Like the training loss, a downward trend would indicate improved performance, whereas fluctuations may point to overfitting or instability during training.
+#### Testing Performance
+- Testing Accuracy: Accuracy on the testing set improves consistently, with slight fluctuations, peaking around 97.5%. This suggests good generalization.
+- Testing Loss: The testing loss decreases and then fluctuates, which is expected as the model encounters various complexities within the test data.
 
-### Custom MLP Model
-
-#### Training Accuracy and Loss
 ![Custom MLP Training Accuracy](CustomMLP_train_accuracy.png)
 ![Custom MLP Training Loss](CustomMLP_train_loss.png)
-
-- **Training Accuracy**: Shows the percentage of correctly classified images in the training set across epochs. The model exhibits an increasing trend, indicating learning over time.
-
-- **Training Loss**: Represents the model's error on the training set. A declining trend is observable, which is desirable as it indicates better model performance with each epoch.
-
-#### Testing Accuracy and Loss
 ![Custom MLP Testing Accuracy](CustomMLP_test_accuracy.png)
 ![Custom MLP Testing Loss](CustomMLP_test_loss.png)
 
-- **Testing Accuracy**: Displays the model's performance on the test set. The plot demonstrates the model's generalization capabilities with new, unseen data.
+### Comparative Analysis
 
-- **Testing Loss**: Illustrates the loss on the test set. Fluctuations suggest variations in model predictions against the actual labels in the test set.
+- The LeNet-5 model slightly outperforms the Custom MLP in terms of testing accuracy. This could be due to the convolutional layers in LeNet-5, which are specifically advantageous for capturing spatial and hierarchical features in image data.
+- Both models show a good fit on the training data, as indicated by the high accuracy and low loss values.
+- The testing loss for both models exhibits some volatility, which is a normal occurrence and can be a focal point for further model improvement.
 
-### Conclusion
+## Conclusion
 
-The plots above demonstrate the learning curve of both models through their respective training and testing phases. They serve as a visual tool to assess the model's performance, stability, and generalization capabilities over time.
+The LeNet-5 and Custom MLP models have demonstrated impressive performance on the MNIST digit recognition task. While LeNet-5 has a marginal advantage in accuracy, the Custom MLP holds its ground, validating the effectiveness of a well-structured fully connected network for image classification tasks.
 
 
 ## Comparative Performance Analysis: LeNet-5 vs Custom MLP
