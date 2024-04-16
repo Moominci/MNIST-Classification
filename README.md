@@ -31,3 +31,51 @@ Both models are implemented in PyTorch.
 The custom MLP model has a parameter count similar to LeNet-5, with a slightly higher number due to the dense connections in the MLP design. This similarity ensures that our MLP model maintains a comparable capacity and complexity.
 
 For detailed implementation, please refer to `model.py` in this repository.
+
+
+## Neural Network Training Report
+
+This report summarizes the training process of two neural network models: a custom Multi-Layer Perceptron (MLP) and the LeNet-5 model. We present the loss and accuracy metrics, both for training and testing datasets, across various epochs.
+
+### LeNet-5 Model
+
+LeNet-5 is a convolutional neural network model well-suited for image recognition tasks. Below are the accuracy and loss plots derived from its training and testing processes.
+
+#### Training Accuracy and Loss
+![LeNet5 Training Accuracy](LeNet5_train_accuracy.png)
+- **Training Accuracy**: Depicts the proportion of correctly identified images by the model in the training set. An upward trend in accuracy is noted as training progresses.
+
+![LeNet5 Training Loss](LeNet5_train_loss.png)
+- **Training Loss**: Showcases the model's training error. The plot shows a steady decrease in loss, signifying consistent learning across epochs.
+
+#### Testing Accuracy and Loss
+![LeNet5 Testing Accuracy](LeNet5_test_accuracy.png)
+- **Testing Accuracy**: Reflects the model's accuracy on the test dataset. This measure helps in understanding how well the model can generalize.
+
+![LeNet5 Testing Loss](LeNet5_test_loss.png)
+- **Testing Loss**: Depicts the test error for the model. Like the training loss, a downward trend would indicate improved performance, whereas fluctuations may point to overfitting or instability during training.
+
+### Custom MLP Model
+
+The Custom MLP model is structured to have a parameter count close to that of the LeNet-5 model. It is trained and tested on the MNIST dataset to recognize handwritten digits.
+
+#### Training Accuracy and Loss
+![Custom MLP Training Accuracy](CustomMLP_train_accuracy.png)
+- **Training Accuracy**: Shows the percentage of correctly classified images in the training set across epochs. The model exhibits an increasing trend, indicating learning over time.
+
+![Custom MLP Training Loss](CustomMLP_train_loss.png)
+- **Training Loss**: Represents the model's error on the training set. A declining trend is observable, which is desirable as it indicates better model performance with each epoch.
+
+#### Testing Accuracy and Loss
+![Custom MLP Testing Accuracy](CustomMLP_test_accuracy.png)
+- **Testing Accuracy**: Displays the model's performance on the test set. The plot demonstrates the model's generalization capabilities with new, unseen data.
+
+![Custom MLP Testing Loss](CustomMLP_test_loss.png)
+- **Testing Loss**: Illustrates the loss on the test set. Fluctuations suggest variations in model predictions against the actual labels in the test set.
+
+
+## Conclusion
+
+The plots above demonstrate the learning curve of both models through their respective training and testing phases. They serve as a visual tool to assess the model's performance, stability, and generalization capabilities over time.
+
+
