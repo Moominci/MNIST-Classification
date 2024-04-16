@@ -113,4 +113,6 @@ Here are the four plots of the LeneT-5 model with the normalization technique.
 <img src="./plot_images/shift_aug_dropout_L2_epochs_15/LeNet5_test_loss.png" width="650" height="300" alt="LeNet-5 Testing Loss">
 
 ### Conclusion
-We can see a slight increase over the existing performance as the regularization technique is applied
+We confirm that the LeneT-5 Test acuity is slightly elevated from 99.1% to 99.25% as the regularization technique is applied.
+
+By finding the optimal hyperparameters through more experiments, we expect to be able to improve our performance further.
