@@ -52,6 +52,7 @@ This report analyzes the performance of two neural network models: the LeNet-5 a
 ![LeNet-5 Testing Accuracy](./plot_images/no_aug_normal_opt_epochs_15/LeNet5_test_accuracy.png)
 ![LeNet-5 Testing Loss](./plot_images/no_aug_normal_opt_epochs_15/LeNet5_test_loss.png)
 
+
 ### Custom MLP Model Performance
 
 The Custom MLP model is designed with a similar number of parameters as the LeNet-5 model, and its performance is measured on the MNIST dataset.
@@ -68,6 +69,11 @@ The Custom MLP model is designed with a similar number of parameters as the LeNe
 ![Custom MLP Training Loss](./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_loss.png)
 ![Custom MLP Testing Accuracy](./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_accuracy.png)
 ![Custom MLP Testing Loss](./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_loss.png)
+
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_accuracy.png" width="400" height="200" alt="Custom MLP Training Accuracy">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_train_loss.png" width="400" height="200" alt="Custom MLP Training Loss">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_accuracy.png" width="400" height="200" alt="Custom MLP Testing Accuracy">
+<img src="./plot_images/no_aug_normal_opt_epochs_15/CustomMLP_test_loss.png" width="400" height="200" alt="Custom MLP Testing Loss">
 
 ### Comparative Analysis
 
